@@ -1,0 +1,16 @@
+{
+  "name": "andrade/php",
+  "description": "Uma pequena aplicacao onde e utilizado o padrao de projeto singleton",
+  "authors": [
+    {
+      "name": "Guilherme V. de Andrade",
+      "email": "gui-keanne@hotmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Src\\": "src/"
+    }
+  },
+  "require": {}
+}
