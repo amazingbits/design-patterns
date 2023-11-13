@@ -1,0 +1,28 @@
+<?php
+
+namespace Src\Factories;
+
+use Src\Templates\Page\PageTemplate;
+use Src\Templates\Page\TwigPageTemplate;
+use Src\Templates\Renderer\TemplateRenderer;
+use Src\Templates\Renderer\TwigRenderer;
+use Src\Templates\Title\TitleTemplate;
+use Src\Templates\Title\TwigTitleTemplate;
+
+class TwigTemplateFactory implements TemplateFactory
+{
+    public function createTitleTemplate(): TitleTemplate
+    {
+        return new TwigTitleTemplate();
+    }
+
+    public function createPageTemplate(): PageTemplate
+    {
+        return new TwigPageTemplate($this->createTitleTemplate());
+    }
+
+    public function getRenderer(): TemplateRenderer
+    {
+        return new TwigRenderer();
+    }
+}
