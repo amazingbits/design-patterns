@@ -1,0 +1,14 @@
+{
+  "name": "andrade/php",
+  "authors": [
+    {
+      "name": "Guilherme V. de Andrade",
+      "email": "gui-keanne@hotmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Src\\": "src/"
+    }
+  }
+}
