@@ -1,0 +1,21 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --runInBand --watch --config ./jest.config.js",
+    "test:cov": "cross-env NODE_OPTIONS=--experimental-vm-modules npx jest --config ./jest.config.js --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
