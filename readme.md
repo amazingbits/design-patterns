@@ -25,5 +25,5 @@ Caso eu veja necessidade, aumentarei este acervo mais pra frente incluindo outro
 
 - [x] Observer
 - [x] Strategy
-- [ ] Template Method
+- [x] Template Method
 - [x] Chain of Responsibility
